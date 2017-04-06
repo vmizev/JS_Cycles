@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Циклы</title>
+</head>
+<body>
+<script>
+
+// +++ Задача 1 +++
+var iAmStr = "I am in the easycode";
+var iAmStr2 = "";
+for (var i = 0; i < iAmStr.length; i++) {
+	if (iAmStr[i-1] == " " || i == 0){
+		var k = iAmStr[i].toUpperCase();
+		iAmStr2 += k;
+	} else {
+		iAmStr2 += iAmStr[i];
+	}				
+}
+console.log(iAmStr2);
+
+// +++ Задача 2 +++
+var bestStr = "tseb eht ma i";
+var bestStr2 = "";
+for (i = bestStr.length - 1; i >= 0; i--) {
+	bestStr2 += bestStr[i];
+};
+console.log(bestStr2);
+
+// +++ Задача 3 +++
+for (var fact = 10, res = 1; fact > 1; fact-- ) {
+	res *= fact ;	
+};
+console.log("Факториал 10 = " + res );
+
+// +++ Задача 4 +++
+var countStr = "Считаем до 10и: ";
+for (i = 1; i <= 10; i++) {			
+	if (i < 10) {
+		countStr += i + ", ";
+	} 
+	else {
+		countStr += i;
+	}
+}
+console.log(countStr);
+
+// +++ Задача 5 +++
+var jsStr = "JavaScript is a pretty good language";
+var jsStr2 = "";
+for (i = 0; i < jsStr.length; i++ ) {
+	if (jsStr[i-1] == " " || i == 0){
+		jsStr2 += jsStr[i].toUpperCase();				
+	} 
+	else if (jsStr[i] !== " ") {
+		jsStr2 += jsStr[i];		
+	} 				
+};		
+console.log(jsStr2);
+
+// +++ Задача 6 +++
+var newStr = "";
+for (a = 1; a <= 15; a++ ) {
+	if (a % 2 !== 0) {
+		newStr += a + " ";		
+	} 
+}
+console.log(newStr);
+</script>
+</body>
+</html>
